@@ -1,0 +1,175 @@
+body{
+    background-color: #DBE2EF;
+    color: #112D4E;
+    font-family: Helvetica, sans-serif;
+}
+
+h1{
+    text-align: center;
+    font-size: calc(18px*2vh+1vw);
+}
+
+h2{
+    border-bottom: 3px solid #3F72AF;
+    padding-bottom: 2%;
+}
+
+main{
+    text-align: center;
+    margin: 2%;
+}
+
+.elements{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2%;
+    width: 100%;
+}
+
+.box{
+    font-family: Helvetica, sans-serif;
+    border: 3px solid #3F72AF;
+    text-align: center;
+    border-radius: 18px;
+    width: 46dvw;
+    min-width: 350px;
+}
+
+#accordion{
+    margin: 2%;
+}
+
+#datepicker p, #datepicker{
+    color: #112D4E;
+    font-size: calc(12px + 1vw + 1vh);
+}
+
+.slider{
+    width: 90%;
+    margin:2% 5% 2%;
+    border: 3px solid #3F72AF;
+    border-radius: 18px;
+    min-width: 350px;
+}
+
+#slider{
+    margin:2%;
+    border: 2px solid #112D4E;
+    background-color: #3F72AF;
+}
+
+#slider span{
+    background-color: #112D4E;
+}
+
+.p input{
+    height: 2.5vh;
+    min-height: 5px;
+    font-size: 12px;
+}
+
+.p p{
+    font-size: 3vh;
+    color:#112D4E;
+}
+
+.photos{
+    float:left;
+    background-color: #3F72AF;
+    border-radius: 18px;
+    width: 400px;
+    height: 400px;
+    padding: 3%;
+    margin-bottom: 10%;
+}
+
+.owl{
+    float:right;
+    background-color: #3F72AF;
+    border-radius: 18px;
+    height: 400px;
+    padding: 3%;
+    max-width: 400px;
+}
+
+.owl img{
+    max-width: 400px;
+    margin: auto;
+}
+
+.second{
+    display: flex;
+    justify-content: space-evenly;
+    gap:4%;
+}
+
+footer{
+    background-color: #3F72AF;
+    font-family: Helvetica, sans-serif;
+    font-size: calc(12px + 1vw + 1vh);
+    text-align: center;
+    color: #DBE2EF;
+    border:1.5px solid #112D4E;
+    padding: 2%;
+}
+
+@media(max-width:900px){
+
+    .elements{
+        justify-content: space-between;
+        
+    }
+
+   .box{
+    min-width: 100px;
+    padding: 3%;
+    flex-direction: column;
+   }
+
+   input{
+    margin: 1%;
+    width: 80%;
+
+   }
+
+   #slider{
+    min-width: 100px;
+    margin: 5%;
+   }
+
+   .photos{
+        margin:auto;
+        float: none;
+        justify-content: center;
+        background-color: #3F72AF;
+        border-radius: 18px;
+        width: 90%;
+        height: 90%;
+        padding: 3%;
+        margin-bottom: 3%;
+    }
+
+    .owl{
+        float: none;
+        justify-content: center;
+        margin: auto;
+        max-width: 90%;
+        margin-bottom: 10%;
+    }
+
+    .owl img{
+        min-width: 250px;
+    }
+
+    .second{
+        display: block;
+        gap: 0;
+    }
+}
+
